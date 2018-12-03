@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/indexRight.css">
+</head>
+<body>
+    <div class="IR-container">
+        <div class="IR-container-con2">
+            <img src="./img/2.png" class="IR-left IR-LR-Center" alt="" onclick="previous(this)">
+            <div class="IR-content-center">
+                <div class="IR-center-content">
+                <div class='IR-center-left'>
+                    <div class='IR-center-pic1' >
+                        <img class='IR-center-pic1-img' id="IR-Cimg1" src="" alt="" onclick="bigShow(this)">
+                    </div>
+                    <div class='IR-center-pic2' >
+                        <img class='IR-center-pic2-img' id="IR-Cimg2" src="" alt="" onclick="bigShow(this)">
+                    </div>
+                </div>
+                <div class="IR-center-right">
+                    <p id="IR-Cp">
+                        
+                　　你说，很多时候总是事与愿违，想得到的得不到，得到的却又不喜欢。“荔枝无好花，牡丹无美食。”的确，有了美丽香艳的花朵，就难再结出鲜美肥硕的果实。每个人都是被上帝咬过一口的苹果，十全十美的人生不存在。事若求全何所乐？放下心中的块垒吧！
+
+                    </p>
+                </div>
+                </div>
+            </div>
+            <img class="IR-content-center hide-bigImg" id="bigImg" onclick="bigClose(this)">
+            <img src="./img/2.png" class="IR-right IR-LR-Center" alt="" onclick="next(this)">
+        </div>
+    </div>
+</body>
+<script>
+    let bigImg=document.getElementById('bigImg');
+    let IRCImg1=document.getElementById('IR-Cimg1');
+    let IRCImg2=document.getElementById('IR-Cimg2');
+    let IRCp=document.getElementById('IR-Cp');
+    let i=0;
+    let imgArr=[{
+        img1:'./img/5.jpg',img2:'./img/4.jpg',text:'你说，很多时候总是事与愿违，想得到的得不到，得到的却又不喜欢。“荔枝无好花，牡丹无美食。”的确，有了美丽香艳的花朵，就难再结出鲜美肥硕的果实。每个人都是被上帝咬过一口的苹果，十全十美的人生不存在。事若求全何所乐？放下心中的块垒吧！'
+        },{
+        img1:'./img/7.jpg',img2:'./img/6.jpg',text:'在岁月的柔波里，我甘愿做一条水草，每当你从我的身边经过，我都会柔柔的向你微笑，油油的向你招摇，默默的为你祝福：愿岁月'
+        },{
+        img1:'./img/9.jpg',img2:'./img/8.jpg',text:'生活的天空不可能永远是湛湛晴天，生活的小河也不会总是碧波微澜。千万不要因为世事的繁杂和无奈而荒芜了内心的花苑，'
+        }
+        // ,{
+        // img1:'./img/10.jpg',img2:'./img/11.jpg',text:'生活的天空不可能永远是湛湛晴天，生活的小河也不会总是碧波微澜。千万不要因为世事的繁杂和无奈而荒芜了内心的花苑，'
+        // },{
+        // img1:'./img/13.jpg',img2:'./img/12.jpg',text:'生活的天空不可能永远是湛湛晴天，生活的小河也不会总是碧波微澜。千万不要因为世事的繁杂和无奈而荒芜了内心的花苑，'
+        // },{
+        // img1:'./img/15.jpg',img2:'./img/14.jpg',text:'生活的天空不可能永远是湛湛晴天，生活的小河也不会总是碧波微澜。千万不要因为世事的繁杂和无奈而荒芜了内心的花苑，'
+        // }
+        ];
+    IRCImg1.setAttribute('src',imgArr[i].img1);    console.log(i);
+    IRCImg2.setAttribute('src',imgArr[i].img2);
+    function bigShow(a){
+        console.log(a);
+        bigImg.classList.remove('hide-bigImg');
+        bigImg.classList.add('show-bigImg');
+        bigImg.style.width=bigImg.offsetWidth+10+'px';
+        bigImg.setAttribute('src',a.src);
+    }
+    function bigClose(a) {
+        console.log(a);
+        bigImg.classList.remove('show-bigImg');
+        bigImg.classList.add('hide-bigImg');
+    }
+    function next(a) {
+        
+        if (i==imgArr.length-1) {
+            i=-1;
+        }
+        console.log('next');
+        IRCImg1.removeAttribute('src');
+        IRCImg2.removeAttribute('src');
+        IRCp.removeChild(IRCp.firstChild);
+        i++;
+        IRCImg1.setAttribute('src',imgArr[i].img1);    console.log(i);
+        IRCImg2.setAttribute('src',imgArr[i].img2);
+        let TextNode=document.createTextNode(imgArr[i].text);
+        IRCp.appendChild(TextNode);
+    }
+    function previous(a){
+        if (i==0) {
+            i=imgArr.length;
+        }
+        IRCp.removeChild(IRCp.firstChild);
+        IRCImg1.removeAttribute('src');
+        IRCImg2.removeAttribute('src');
+        i--;
+        IRCImg2.setAttribute('src',imgArr[i].img2);console.log(i);
+        IRCImg1.setAttribute('src',imgArr[i].img1);
+        let TextNode=document.createTextNode(imgArr[i].text);
+        IRCp.appendChild(TextNode);
+    }
+    // 注：改图片只需要在imgArr中改img1,img2与对应介绍文字text
+</script>
+</html>

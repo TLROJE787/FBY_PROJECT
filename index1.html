@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Empty Project</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <style>
+        .content{
+
+        }
+        /*页面1开始*/
+        .page-1{
+            width:800px;
+            height:600px;
+            border:2px solid gray;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            /*border-bottom: none;*/
+        }
+        .page-1 .img-1{
+            width:700px;
+            height:700px;
+            margin-top:-90px;
+        }
+        .page-1 .img-2{
+            width:200px;
+            height:200px;
+            /*background: black;*/
+            position: absolute;
+            top:380px;
+            left:300px;
+
+        }
+        /*页面1结束*/
+
+        /*页面2开始*/
+        .page-2{
+            width:800px;
+            height:600px;
+            border:2px solid gray;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: none;
+            border-top: none;
+        }
+        .page-2 .img-1{
+            width:700px;
+            height:800px;
+            margin-top:-150px;
+        }
+        .page-2 .text{
+            height:20px;
+            line-height: 20px;
+            position: absolute;
+            top:260px;
+            left:430px;
+            color:gray;
+        }
+        .page-2 .img-2{
+            width:120px;
+            height:120px;
+            /*background: black;*/
+            position: absolute;
+            top:260px;
+            left:460px;
+        }
+        .page-2 .img-3{
+            width:200px;
+            height:200px;
+            /*background: black;*/
+            position: absolute;
+            top:350px;
+            left:300px;
+        }
+        .page-2 .img-4{
+            width:120px;
+            height:120px;
+            /*background: black;*/
+            position: absolute;
+            top:500px;
+            left:340px;
+        }
+        /*页面2 结束*/
+
+        /*页面3开始*/
+        .page-3{
+            width:800px;
+            height:400px;
+            border:2px solid gray;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border-top: none;
+        }
+        .page-3 .text{
+            width:80px;
+            height:20px;
+            color: #777777;
+            background: white;
+            position: absolute;
+            top:-4px;
+            left:375px;
+            z-index: 2;
+        }
+        .page-3 .img-1{
+            position: absolute;
+            width:100%;
+            height:5px;
+            top:4px;
+            left:0px;
+            background:gray;
+            z-index: 1;
+        }
+        .page-3 .img-2{
+            width:700px;
+            height:800px;
+            margin-top:-200px;
+        }
+        .page-3 .img-3{
+            width:200px;
+            height:200px;
+            /*background: black;*/
+            position: absolute;
+            top:200px;
+            left:300px;
+        }
+        /*页面3结束*/
+
+        /*页面4开始*/
+        .page-4{
+            width:800px;
+            height:560px;
+            border:2px solid gray;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border-top: none;
+            border-bottom: none;
+        }
+        .page-4 .con{
+            width:800px;
+            height:500px;
+            /*background: #cc0000;*/
+        }
+        .page-4>.con .left{
+            width:300px;
+            height:500px;
+            /*background: #219161;*/
+            float:left;
+        }
+        page-4>con .left img{
+            width:300px;
+            height:500px;
+        }
+        .page-4>.con .right{
+            width:500px;
+            height:500px;
+            /*background: #ffff4f;*/
+            float: right;
+        }
+        .page-4>.con .right-top{
+            width:500px;
+            height:200px;
+            /*background: #BB6688;*/
+            position: relative;
+        }
+        .page-4>.con .right-top img{
+            width:500px;
+            height:24px;
+            background: gray;
+            position:absolute;
+            top:-2px;
+            left:0px;
+        }
+        .page-4>.con .right-top .text{
+            height:25px;
+            line-height: 25px;
+            background: white;
+            position: absolute;
+            top:-5px;
+            left:210px;
+            z-index: 4;
+
+        }
+        .page-4>.con .right-bottom{
+            width:500px;
+            height:300px;
+            /*background: #99ffff;*/
+        }
+        .page-4>.con .right-bottom img{
+            width:500px;
+            height:236px;
+        }
+        .page-4>.con h3{
+            height:40px;
+            line-height: 40px;
+            background: white;
+            position: absolute;
+            top:25px;
+            left:210px;
+        }
+        .page-4>.con .right-top .right-top-img{
+            width:120px;
+            height:120px;
+            position: absolute;
+            top:80px;
+            left:200px;
+            background: transparent;
+            /*background: #cc0000;*/
+            /*z-index: 3;*/
+        }
+        .page-4>a img{
+            width:150px;
+            height:150px;
+            position: absolute;
+            top:435px;
+            left:300px;
+            /*background: #cc0000;*/
+
+        }
+        /*页面4结束*/
+
+        /*页面5开始*/
+        .page-5{
+            width:800px;
+            height:580px;
+            border:2px solid gray;
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border-top: none;
+        }
+        .page-5 .about-me{
+            width:100%;
+            height:10px;
+            background: gray;
+            position: absolute;
+            top:-7px;
+            left:0px;
+        }
+        .page-5 .div-about{
+            width:80px;
+            height:20px;
+            color: #777777;
+            background: white;
+            position: absolute;
+            top:-6px;
+            left:375px;
+            z-index: 2;
+
+          }
+        .page-5 .left{
+            width:490px;
+            height:580px;
+            float: left;
+            /*background: #cc0000;*/
+        }
+        .page-5 .right{
+            width:300px;
+            height:580px;
+            float: right;
+            /*background: #BB6688;*/
+        }
+        .page-5 .left .left-img{
+             position: absolute;
+             top:300px;
+             left:20px;
+             /*background: #ffff4f;*/
+         }
+        .page-5 .left p{
+            width:488px;
+            height:298px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space:normal;
+        }
+        .page-5 .left img{
+            width:280px;
+            height:300px;
+        }
+        .page-5 .right .right-img{
+            position: absolute;
+            top:0px;
+            right:25px;
+            /*background: #ffff4f;*/
+        }
+        .page-5 .right img{
+            width:250px;
+            height:280px;
+            margin:0 auto;
+        }
+        .page-5 .right p{
+            height:300px;
+            width:298px;
+            /*background: #219161;*/
+            position: absolute;
+            top:300px;
+
+        }
+        .page-5 .info{
+            position: absolute;
+            top:10px;
+        }
+
+        /*页面5结束*/
+
+        #time{
+            position: absolute;
+            top:20px;
+            left:10px;
+        }
+        #menu{
+            position: absolute;
+            top:40px;
+            right:50px;
+            list-style: none;
+        }
+        #menu li{
+            text-align: center;
+            height:30px;
+            line-height: 30px;
+        }
+        #menu a{
+            color:black;
+            text-decoration: none;
+            text-align: center;
+        }
+        .mark{
+            position: absolute;
+            top:25px;
+            right:20px;
+            width:120px;
+
+        }
+        .list-menu{
+            list-style: none;
+            position: absolute;
+            top:50px;
+            right:10px;
+            width:150px;
+            background-color: gray;
+            display: none;
+        }
+        #menu .list-menu a{
+            color:white;
+        }
+        .list-menu li{
+            border:1px solid whitesmoke;
+        }
+
+        #menu>li:hover .list-menu{
+            display: block;
+        }
+        .content{
+            overflow: hidden;
+            width:800px;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body onload="time()">
+<div class="content">
+    <div class="page-1" div="div1">
+        <script>
+            function time(){
+                var date = new Date();
+                var year = date.getFullYear();
+                var month = date.getMonth()+1;
+                var day = date.getDate();
+                var week = date.getDay();
+                week="星期"+"日一二三四五六".charAt(week);
+                /*switch(week){
+                    case 1:
+                        week="星期一";
+                        break;
+                    case 2:
+                        week="星期二";
+                        break;
+                    case 3:
+                        week="星期三";
+                        break;
+                    case 4:
+                        week="星期四";
+                        break;
+                    case 5:
+                        week="星期五";
+                        break;
+                    case 6:
+                        week="星期六";
+                        break;
+                    case 0:
+                        week="星期日";
+                        break;
+                }*/
+                var hour =date.getHours();
+                hour=hour<10?"0"+hour:hour;
+                var minute =date.getMinutes();
+                minute=minute<10?"0"+minute:minute;
+                var second = date.getSeconds();
+                second=second<10?"0"+second:second;
+                var currentTime = year+"-"+month+"-"+day+"  "+week+"   "+hour+":"+minute+":"+second;
+                document.getElementById("time").innerHTML=currentTime;
+            }
+            setInterval("time()",1000);
+        </script>
+        <span id="time"></span>
+        <img  class="img-1" src="9.1.png">
+        <a href="#div2"><img class="img-2" src="7.png"></a>
+        <ul id="menu">
+            <li>
+                <ul style="list-style:none;">
+                    <li>  <a href="#" class="mark" style="font-size:1.5rem;float: left;"><img src="./img/1.png" style="width:2rem;height:1.5rem;list-style:none;float: left;" alt="">MENU</a></li>
+                </ul>
+                <ul class="list-menu">
+                    <li><a href="#div2">Olympic Games</a></li>
+                    <li><a href="#div3">Poster</a></li>
+                    <li><a href="#div4">Layout design</a></li>
+                    <li><a href="#div5">About me</a></li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div>
+    <div class="page-2" id="div2">
+        <img  class="img-1" src="9.png">
+        <div class="text">Sports items icon design</div>
+        <img class="img-2" src="2.png" onclick="linkTo()">
+        <a href="#div3"><img class="img-3" src="7.png"></a>
+        <img class="img-4" src="2.png" onclick="linkTo()">
+    </div>
+    <div class="page-3" id="div3">
+        <div class="text">PoGter</div>
+        <img class="img-1" src="8.png">
+        <img class="img-2" src="9.2.png">
+       <a href="#div4"> <img class="img-3" src="7.png"></a>
+    </div>
+    <div class="page-4" id="div4">
+        <div class="con">
+            <div class="left"><img src="2.jpg"></div>
+            <div class="right">
+                <div class="right-top">
+                    <img src="8.png">
+                    <div class="text">Layout design</div>
+                    <h3>“Where”</h3>
+                    <img class="right-top-img" src="2.png" onclick="linkTo()">
+                </div>
+                <div class="right-bottom">
+                    <img src="3.jpg">
+                </div>
+            </div>
+        </div>
+        <a href="#div5"><img src="7.png"></a>
+    </div>
+    <div class="page-5" id="div5">
+        <img src="8.png" class="about-me">
+        <div class="div-about">About me</div>
+        <div class="info">
+        <div class="left">
+            <p>
+                <!-- 此处若需回车换行在文字后直接加<br>即可 -->
+                <!-- 若需要缩进，则直接加&nbsp; -->
+
+
+
+
+                　　你说，很多时候总是事与愿违，想得到的得不到，得到的却又不喜欢。“荔枝无好花，牡丹无美食。”的确，有了美丽香艳的花朵，就难再结出鲜美肥硕的果实。每个人都是被上帝咬过一口的苹果，十全十美的人生不存在。事若求全何所乐？放下心中的块垒吧！给心灵减减压，也给快乐腾出一点儿空间。
+
+
+                　　生活的天空不可能永远是湛湛晴天，生活的小河也不会总是碧波微澜。千万不要因为世事的繁杂和无奈而荒芜了内心的花苑，好好侍弄自己的心灵花苑，植一米阳光，植一缕花香，让心田充溢温暖和芬芳。
+
+                　　
+
+                　　我希望你的快乐像山涧的小溪涓涓流淌，欢快向前，滋润每一段岁月；我希望你的快乐扶摇直上，像浮云一样在天空中恣意流淌，洒脱每一段流年。
+
+                　　在岁月的柔波里，我甘愿做一条水草，每当你从我的身边经过，我都会柔柔的向你微笑，油油的向你招摇，默默的为你祝福：愿岁月温柔待你！愿你生活的兰舟，只载欢愉，不载忧愁！
+            </p>
+            <div class="left-img"> <img src="2.jpg"></div>
+        </div>
+        <div class="right">
+            <div class="right-img"> <img src="2.jpg"></div>
+            <p>
+                　　我希望你的快乐像山涧的小溪涓涓流淌，
+                    欢快向前，滋润每一段岁月；我希望你的快乐扶摇直上，像浮云一样在天空中恣意流淌，洒脱每一段流年。
+
+                　　在岁月的柔波里，我甘愿做一条水草，每当你从我的身边经过，我都会柔柔的向你微笑，</p>
+        </div></div>
+    </div>
+</div>
+</body>
+<script>
+    function linkTo(){
+        window.location.href='./indexRight.html';
+    }
+</script>
+</html>

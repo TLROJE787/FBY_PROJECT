@@ -1,0 +1,18 @@
+/*GLOBAL DEFINITIONS*************/
+@viewport { width: device-width; zoom: 1; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html { width: 100%; height: 100%; font-family: sans-serif; text-rendering: geometricPrecision; }
+
+/*YOUR STYLING GOES HERE*****************/
+
+
+
+/*USE YOUR BREAKPOINTS IF YOU WANT OR NEED THEM**********************/
+@media screen and (min-width: 30em) { /*480px*/
+}
+@media screen and (min-width: 48em) { /*768px*/
+}
+@media screen and (min-width: 64em) { /*1024px*/
+}
+@media screen and (min-width: 78.75em) { /*1260px*/
+}
